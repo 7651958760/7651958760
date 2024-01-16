@@ -1,0 +1,11 @@
+# Open the file in read mode
+with open('file1.txt', 'r') as file:
+    # Read the content of the file
+    content = file.read()
+
+# Reverse the content
+reversed_content = content[::-1]
+
+# Open the file in write mode and write the reversed content back to it
+with open('file1.txt', 'w') as file:
+    file.write(reversed_content)
